@@ -1,9 +1,10 @@
-var Grub = function(age, color, food) {
+var Grub = function() {
 	this.age = 0;
-	this.color= 'pink';
-	this.food= 'jelly';
-	this.eat = function(){};
+	this.color = 'pink';
+	this.food = 'jelly';
+
 };
 
-var grub = new Grub();
-
+Grub.prototype.eat = function(){
+	return true;
+};
